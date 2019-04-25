@@ -44,19 +44,19 @@ NSString *urlStr = @"https://ec-h5-test.thefifthera.com/?debug=true#/";
 // 拦截Url调用代理方法，
 -(void)interceptHomePageUrl:(NSString *)url{
 
-    NewWebViewController * webvc = [[NewWebViewController alloc] init];
-    webvc.url = url;
-    [self.navigationController pushViewController:webvc animated:YES];
+NewWebViewController * webvc = [[NewWebViewController alloc] init];
+webvc.url = url;
+[self.navigationController pushViewController:webvc animated:YES];
 }
 
 // 分享图片代理，SDK会传递合成的分享图片和分享类型
 -(void)shareImage:(UIImage *)shareImage shareType:(SDKShareType)shareType{
-    // 返回合成图片
+// 返回合成图片
 }
 
 // SDK返回代理，此方法可以调用SDK导航栏返回
 - (void)goSDKWebback{
-    // 点击了SDK的返回方法
+// 点击了SDK的返回方法
 }
 
 ```
@@ -175,18 +175,19 @@ webvc.url = url;
 }
 ```
 
-**token失效**
+**错误信息**
 
 /**
 * token失效 通过此方法可以重新加载授权URL
 * @param args 返回的失效信息
 **/
 - (void)tokenFailed:(NSDictionary *)args{
-    // 重新授权
-    
+// 重新授权
+
 }
 
 
 ## Demo下载
 
-https://github.com/DT-2019/SDK.git
+https://github.com/wanmeizty/-SDK.git
+
